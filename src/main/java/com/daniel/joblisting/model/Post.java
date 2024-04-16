@@ -3,6 +3,7 @@ package com.daniel.joblisting.model;
 import java.util.Arrays;
 
 public class Post {
+    private String _id;
     private String profile;
     private String description;
     private int experience;
@@ -10,7 +11,15 @@ public class Post {
 
     public Post() {
     }
-    
+
+    public String getId() {
+        return _id;
+    }
+
+   public void setId(String id) {
+        this._id = id;
+    }
+
     public String getProfile() {
         return profile;
     }
